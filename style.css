@@ -1,0 +1,99 @@
+video {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  top: 50%;
+  left: 50%;
+  z-index: -100;
+  background: cover;
+  transform: translate(-50%, -50%);
+}
+
+body {
+  background: black;
+}
+
+/* Add some content at the bottom of the video/page */
+.slider {
+  width: 1000px;
+  overflow: hidden;
+  margin: 150px auto;
+}
+
+.slide {
+  float: left;
+}
+.slides {
+  width: calc(1000px * 3);
+  animation: glisse 5s infinite;
+}
+
+.bloc {
+  position: relative;
+  height: 300vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+@keyframes glisse {
+  0% {
+    transform: translateX(0);
+  }
+
+  33% {
+    transform: translateX(-1000px);
+  }
+
+  66% {
+    transform: translateX(-2000px);
+  }
+  100% {
+    transform: translateX(-0px);
+  }
+}
+* {
+  list-style: none;
+  text-decoration: none;
+  font-family: "Pacifico", cursive;
+}
+nav {
+  position: sticky;
+  float: left;
+  width: 100%;
+  background: rgb(19, 95, 4);
+  z-index: 1000;
+  font-size: 30px;
+  height: 130px;
+  border-radius: 15px;
+}
+nav li {
+  float: left;
+  padding-left: 70px;
+}
+nav li a {
+  color: white;
+}
+
+nav a {
+  color: white;
+}
+span {
+  color: red;
+}
+.slider {
+  border-radius: 500px;
+}
+h2 {
+  color: blueviolet;
+  margin-left: 200px;
+}
+.red:hover {
+  color: red;
+  transform: scale(1.1);
+}
+
+.texte a {
+  color: #00561b;
+}
